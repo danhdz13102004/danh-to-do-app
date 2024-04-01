@@ -1,0 +1,12 @@
+---
+- name: A simple playbook file
+  hosts: localhost
+  vars:
+    greeting: "Hello"
+  tasks:
+
+
+    - name: show
+      copy:
+        dest: "danh/hello.txt"
+        content: "{{ greeting }}"
